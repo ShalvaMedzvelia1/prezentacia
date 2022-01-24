@@ -1,0 +1,58 @@
+header{
+    background-color:aquamarine;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul{
+    display: flex;
+}
+.nav-a{
+    margin-right: 70px;
+}
+.ellipse{
+    width:50px;
+    margin-left:20px
+}
+footer{
+    background-color:aquamarine;
+    margin-top:100px;
+    height:100px;
+}
+section{
+    position:relative;
+    width:1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.moto{
+    width: 80px;
+}
+.div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+}
+.restaurant{
+    height:150px;
+    width:150px;
+    background-color:yellow;
+}
+.animation{
+    position: absolute;
+    animation-name: moto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes moto{
+    0%   {left:50px; top:150px;}
+    15%  {left:50px; top:400px;}
+    25%  {left:480px; top:150px;}
+    35%  {left:480px; top:400px;}
+    50%  {left:910px; top:150px;}
+    75%  {left:910px; top:400px;}
+    100% {left:50px; top:150px;}
+}
