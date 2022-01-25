@@ -8,10 +8,24 @@ header {
 }
 .nav-ul {
   display: flex;
+  padding: 50px;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+  font-size: 20px;
+  float: left;
+  transition: 0.8s;
+}
+
+nav:hover li {
+  transform: rotateY(360deg);
 }
 .nav-a {
   margin-right: 70px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -129,9 +143,7 @@ h1 {
   text-align: center;
   font-size: 30px;
   letter-spacing: .15em;
-  animation: 
-  typing 5s steps(100, end),
-  blink-caret .75s step-end infinite;
+  animation: typing 3s steps(100, end);
 }
 
 @keyframes typing {
