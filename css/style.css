@@ -4,6 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation:bg-change 10s infinite;
 }
 .nav-ul {
   display: flex;
@@ -11,7 +12,6 @@ header {
 .nav-a {
   margin-right: 70px;
 }
-
 a {
   text-decoration: none;
   color: black;
@@ -29,6 +29,7 @@ a:hover {
 
 footer {
   background-color: thistle;
+  animation:bg-change 20s infinite;
   margin-top: 100px;
   height: 420px;
   padding: 50px;
@@ -89,6 +90,7 @@ label {
 
 input[type="submit"] {
   background-color: #d8bfd8;
+  animation:bg-change 10s infinite;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -150,6 +152,7 @@ h3 strong {
 
 .button {
   background-color: thistle;
+  animation:bg-change 15s infinite;
   border: none;
   padding: 20px;
   text-align: center;
@@ -233,7 +236,7 @@ h3 strong {
   width: 320px;
   height: 300px;
   background-color: #d8bfd8;
-  animation:bg-change 10s infinite;
+  animation:bg-change 20s infinite;
 }
 
 body::before {
