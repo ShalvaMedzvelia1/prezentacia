@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation:bg-change 15s infinite;
+  animation: bg-change 15s infinite;
 }
 .nav-ul {
   display: flex;
@@ -43,7 +43,7 @@ a:hover {
 
 footer {
   background-color: thistle;
-  animation:bg-change 20s infinite;
+  animation: bg-change 20s infinite;
   margin-top: 100px;
   height: 420px;
   padding: 50px;
@@ -104,7 +104,7 @@ label {
 
 input[type="submit"] {
   background-color: #d8bfd8;
-  animation:bg-change 10s infinite;
+  animation: bg-change 10s infinite;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -142,14 +142,18 @@ h1 {
   font-weight: bold;
   text-align: center;
   font-size: 30px;
-  letter-spacing: .15em;
+  letter-spacing: 0.15em;
   animation: typing 3s steps(100, end);
   margin-top: -40px;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 h2 {
@@ -163,9 +167,15 @@ h2 {
 }
 
 @keyframes color-change {
-  0% { color: thistle; }
-  50% { color: rgb(97, 59, 97); }
-  100% { color: rgb(94, 138, 146); }
+  0% {
+    color: thistle;
+  }
+  50% {
+    color: rgb(97, 59, 97);
+  }
+  100% {
+    color: rgb(94, 138, 146);
+  }
 }
 
 h3 {
@@ -182,7 +192,7 @@ h3 strong {
 
 .button {
   background-color: thistle;
-  animation:bg-change 15s infinite;
+  animation: bg-change 15s infinite;
   border: none;
   padding: 20px;
   text-align: center;
@@ -238,7 +248,7 @@ h3 strong {
   display: grid;
   -webkit-box-shadow: 1px 1px 3px 1px grey;
   box-shadow: 1px 1px 3px 1px grey;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .article2 {
@@ -248,7 +258,7 @@ h3 strong {
   display: grid;
   -webkit-box-shadow: 1px 1px 3px 1px grey;
   box-shadow: 1px 1px 3px 1px grey;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .article3 {
@@ -258,7 +268,7 @@ h3 strong {
   display: grid;
   -webkit-box-shadow: 1px 1px 3px 1px grey;
   box-shadow: 1px 1px 3px 1px grey;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 .restaurant {
@@ -266,28 +276,33 @@ h3 strong {
   width: 320px;
   height: 300px;
   background-color: #d8bfd8;
-  animation:bg-change 20s infinite;
+  animation: bg-change 20s infinite;
 }
 
 body::before {
-  content:"";
-  position:fixed;
-  z-index:-100;
-  width:100%;
-  height:100%;
-  background-color:#fff;
-  background-image: 
-  radial-gradient(circle farthest-side at top right, transparent, #fff), radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #d8bfd8);
-  animation:bg-change 10s infinite;
+  content: "";
+  position: fixed;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: radial-gradient(
+      circle farthest-side at top right,
+      transparent,
+      #fff
+    ),
+    radial-gradient(ellipse farthest-corner at 0% 100%, transparent, #d8bfd8);
+  animation: bg-change 10s infinite;
 }
 
 @keyframes bg-change {
-0%, 100% {
-  filter:hue-rotate(100deg);
-}
-50% {
-  filter:hue-rotate(-600deg);
-}
+  0%,
+  100% {
+    filter: hue-rotate(100deg);
+  }
+  50% {
+    filter: hue-rotate(-600deg);
+  }
 }
 
 .rotate {
@@ -303,4 +318,14 @@ body::before {
   to {
     transform: rotate(359deg);
   }
+}
+
+.a svg {
+  width: 40;
+  height: 40;
+}
+
+.svg {
+  position: fixed;
+  margin-left: 1375px;
 }
