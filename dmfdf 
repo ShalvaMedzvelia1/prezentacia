@@ -1,0 +1,9 @@
+ @keyframes moto{
+    0%   {left:50px; top:150px;}
+    15%  {left:50px; top:400px;}
+    25%  {left:480px; top:150px;}
+    35%  {left:480px; top:400px;}
+    50%  {left:910px; top:150px;}
+    75%  {left:910px; top:400px;}
+    100% {left:50px; top:150px;}
+}

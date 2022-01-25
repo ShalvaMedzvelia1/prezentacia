@@ -6,53 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>პრეზენტაცია</title>
 </head>
 <body>
     <header>
-        <img src="./img/Ellipse.svg" alt="Ellipse" class="ellipse">
+        <img src="./img/logo.png" alt="Logo" class="logo">
         <nav>
             <ul class="nav-ul">
                 <li>
-                    <a class="nav-a" href="#">VISION & MISSION</a>
+                    <a class="nav-a" href="#">ჩვენს შესახებ</a>
                 </li>
                 <li>
-                    <a class="nav-a" href="#">PROJETS</a>
+                    <a class="nav-a" href="#">კარიერა</a>
                 </li>
                 <li>
-                    <a class="nav-a" href="#">EQUIPE</a>
+                    <a class="nav-a" href="#">დახმარება</a>
                 </li>
                 <li>
-                    <a class="nav-a" href="#">CONTACT</a>
+                    <a class="nav-a" href="#">კონტაქტი</a>
                 </li>
             </ul>
         </nav>
     </header>
     <section>
         <div class="animation"><img class="moto" src="./img/moto.png" alt="moto"></div>
-        <div class="div">
-            <div class="restaurant">
-                asdfsadfsadgsg
-            </div>
-            <div  class="restaurant">
-                dfasdsgfdg
-            </div>
-            <div  class="restaurant">
-                dfasdsgfdg
-            </div>
-            <div  class="restaurant">
-                dfasdsgfdg
-            </div>
-            <div  class="restaurant">
-                dfasdsgfdg
-            </div>
-            <div  class="restaurant">
-                dfasdsgfdg
-            </div>
+
+        <div class="grid">
+            <div class="article1">
+                <img class="restaurant" src="https://cdn.freebiesupply.com/logos/thumbs/2x/mcdonalds-black-logo.png" alt="Restaurant1">
+                <h2>McDonald's</h2>
+                <h3><strong>რეიტინგი:</strong> 95%</h3>
+                <div class="button">
+                    <a href="#">შეუკვეთე</a>
+                </div>
         </div>
+
+        <div class="article2">
+            <img class="restaurant" src="https://cdn.freebiesupply.com/logos/large/2x/wendys-1-logo-png-transparent.png" alt="Restaurant1">
+            <h2>Wendy's</h2>
+            <h3><strong>რეიტინგი:</strong> 97%</h3>
+            <div class="button">
+                <a href="#">შეუკვეთე</a>
+        </div>
+        </div>
+
+        <div class="article3">
+            <img class="restaurant" src="https://www.pngall.com/wp-content/uploads/2/Subway-PNG-Photo.png" alt="Restaurant1">
+                <h2>Subway</h2>
+                <h3><strong>რეიტინგი:</strong> 99%</h3>
+                <div class="button">
+                    <a href="#">შეუკვეთე</a>
+                </div>
+    </div>
     </section>
+
+    <section>
+    <h1>მოგვწერეთ</h1>
+    <div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">სახელი</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="სახელი..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">ელ-ფოსტა</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="ელ-ფოსტა..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">ქალაქი</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="თბილისი">თბილისი</option>
+        <option value="ბათუმი">ბათუმი</option>
+        <option value="ქუთაისი">ქუთაისი</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">კომენტარი</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="დაწერეთ კომენტარი.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="გაგზავნა">
+  </div>
+  </form>
+</div>
+</section>
+
     <footer>
-            something
+        <div class="container1">
+            <div class="row">
+            <div class="column">
+           
+          <p>
+            <strong>ტელ.:</strong> <a href="tel:+995 555 555">+995 555 555</a><br>
+            <strong>მისამართი:</strong> <a href="https://g.page/bolt-taxify-georgia?share" target="_blank">142 აკაკი ბელიაშვილის ქუჩა, თბილისი</a><br>
+            <strong>ელ-ფოსტა:</strong> <a href="mailto:example@gmail.com">example@gmail.com</a>
+        </p></div>
+              <div class="columnTwo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.943546569856!2d44.77713481557188!3d41.78643027922963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472794e03b705%3A0x574d5e4f5fdf51f0!2sBolt%20Georgia!5e0!3m2!1sen!2sge!4v1643064964977!5m2!1sen!2sge" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            </div>
+          </div>
     </footer>
 </body>
 </html>
