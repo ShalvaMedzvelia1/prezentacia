@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation:bg-change 10s infinite;
+  animation:bg-change 15s step-end;
 }
 .nav-ul {
   display: flex;
