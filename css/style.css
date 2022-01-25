@@ -127,7 +127,16 @@ h1 {
   color: rgb(161, 129, 161);
   font-weight: bold;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
+  letter-spacing: .15em;
+  animation: 
+  typing 5s steps(100, end),
+  blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
 h2 {
