@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  animation:bg-change 15s step-end;
+  animation:bg-change 15s infinite;
 }
 .nav-ul {
   display: flex;
@@ -157,6 +157,13 @@ h2 {
   font-size: 25px;
   padding: 10px;
   text-align: center;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: thistle; }
+  50% { color: rgb(97, 59, 97); }
+  100% { color: rgb(94, 138, 146); }
 }
 
 h3 {
