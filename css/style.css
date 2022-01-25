@@ -157,6 +157,7 @@ h2 {
   font-size: 25px;
   padding: 10px;
   text-align: center;
+  margin-top: 10px;
   animation: color-change 5s infinite;
 }
 
