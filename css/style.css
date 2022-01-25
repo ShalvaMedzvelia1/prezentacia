@@ -144,6 +144,7 @@ h1 {
   font-size: 30px;
   letter-spacing: .15em;
   animation: typing 3s steps(100, end);
+  margin-top: -40px;
 }
 
 @keyframes typing {
